@@ -12,8 +12,10 @@ $(document).ready(function(event){
 
     var name = $("input#name").val().toUpperCase();
     $(".name").text(name);
-    alert('hello');
+    alert('HELLO');
 
+    var question1 = $("input:radio[name=question1]:checked").val();
+    
     $(".answer").show();
     $(".alert-success").hide();
     $(".questions").fadeOut();
