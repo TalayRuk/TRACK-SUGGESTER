@@ -18,3 +18,14 @@
 .btn-danger {
   margin: 25px;
 }
+
+.alert-success {
+  display: none;
+  text-align: center;
+  color: #F38630;
+  font-size: 26px;
+}
+
+.questions {
+  display: none;
+}
