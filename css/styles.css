@@ -13,12 +13,14 @@
 .alert-success {
   display: none;
   text-align: center;
+  align-items: center;
   color: #F38630;
   font-size: 26px;
 }
 
 .questions {
   display: none;
+  text-align: center;
   color: #0B486B;
   font-size: 16px;
   font-weight: bolder;
@@ -32,8 +34,28 @@
 .warning {
   color: #FA6900;
 }
+
+.radio {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: left;
+}
+
+.Q2 {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+/*#question2 {
+  width: 60%;
+
+}*/
 #ready {
   text-align: center;
+}
+
+#dino-comic {
+  width: 100%
 }
 
 .answer {
