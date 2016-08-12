@@ -5,7 +5,7 @@
   background-color: #0B486B;
 }
 
-.btn-danger {
+#start {
   margin: 25px;
 }
 
@@ -25,7 +25,7 @@
   border-color: #66afe9;
 }
 
-.btn-warning {
+#ready {
   text-align: center;
 }
 
