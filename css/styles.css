@@ -10,11 +10,11 @@
 
 }*/
 .jumbotron {
-  color: white;
+  color: #CFF09E;
   text-align: center;
   background-color: #0B486B;
 }
 
-.btn-warning {
+.btn-danger {
   margin: 25px;
 }
