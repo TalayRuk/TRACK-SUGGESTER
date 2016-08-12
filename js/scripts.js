@@ -15,7 +15,8 @@ $(document).ready(function(event){
     alert('HELLO');
 
     var question1 = $("input:radio[name=question1]:checked").val();
-    
+
+
     $(".answer").show();
     $(".alert-success").hide();
     $(".questions").fadeOut();
