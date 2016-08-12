@@ -1,14 +1,20 @@
-#header {
+/*#header {
   width: 5%;
 
 }
-h1 {
+.jumbotron h1 {
   text-align: center;
 }
 
 .mid-section img {
- width: 100%;
+
+}*/
+.jumbotron {
+  color: white;
+  text-align: center;
+  background-color: #0B486B;
 }
 
-  background-color: #9CC4E4;
+.btn-warning {
+  margin: 25px;
 }
