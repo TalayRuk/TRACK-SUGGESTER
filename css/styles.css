@@ -1,17 +1,7 @@
-/*#header {
-  width: 5%;
-
-}
-.jumbotron h1 {
-  text-align: center;
-}
-
-.mid-section img {
-
-}*/
 .jumbotron {
   color: #CFF09E;
   text-align: center;
+  text-shadow:  4px 4px black;
   background-color: #0B486B;
 }
 
@@ -26,9 +16,19 @@
   font-size: 26px;
 }
 
-.questions {
+.container {
   display: none;
   background-color: #ECE5CE;
 }
 
-.form-control :
+.form-control {
+  border-color: #66afe9;
+}
+
+.btn-warning {
+  text-align: center;
+}
+
+.answer {
+  display: none;
+}

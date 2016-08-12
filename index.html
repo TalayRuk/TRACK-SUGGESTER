@@ -11,36 +11,33 @@
     <title>TRACK SUGGESTER</title>
   </head>
   <body>
-    <!-- <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img id="header" alt="header" src="http://blog.stoneriverelearning.com/wp-content/uploads/2016/07/Programmer.jpg">
-          </a>
-        </div>
-      </div>
-    </nav>
-    <h1>WHICH PROGRAMING LANGUAGE IS RIGHT FOR YOU?</h1>
-    <div class="mid-section">
-      <img src="http://myskilldomain.com/category/img/programming-tech-header.jpg" alt="languagesType" />
-      <button type="button" name="button"></button>
-    </div> -->
+  
     <div class="jumbotron">
       <h1>WHICH PROGRAMING LANGUAGE IS RIGHT FOR YOU?</h1>
       <img src="http://www.computerscienceonline.org/wp-content/themes/computerScience/images/Major-new-design/graph-img.jpg" alt="diff-languages" />
-      <p><a class="btn btn-danger btn-lg" href="#" role="button">...CURIOUS?</a></p>
+      <p><a class="btn btn-danger btn-lg" role="button">...CURIOUS?</a></p>
     </div>
+
 
     <div class="alert alert-success" role="alert">Now that You are here. Let's answer some questions about you!</div>
 
+    <div class="container">
+      <form class="questions" action="index.html" method="post">
+        <div class="form-group">
+          <label for="name">NAME:</label>
+          <input id="name" type="text" class="form-contol :focus" >
+        </div>
+        <button class="btn btn-warning" id="ready">Ready!</button>
+      </form>
+    </div>
 
-    <form class="questions" action="index.html" method="post">
-      <div class="form-group">
-        <label for="name">NAME:</label>
-        <input type="text" class="form-contol :focus" value="">
+    <div class="answer">
+      <h1>Here's what you've been waiting for!</h1>
+      <h2>Congratulation <span class="name"></span>! </h2>
 
-      </div>
-    </form>
+
+    </div>
+
 
 
 
