@@ -16,7 +16,7 @@
   font-size: 26px;
 }
 
-.container {
+.questions {
   display: none;
   background-color: #ECE5CE;
 }
@@ -31,4 +31,7 @@
 
 .answer {
   display: none;
+  color: #C5E0DC;
+  text-align: center;
+  background-color: #3B8686;
 }

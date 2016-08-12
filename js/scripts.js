@@ -2,19 +2,22 @@ $(document).ready(function(event){
   $("#start").click(function(){
     $(".jumbotron").hide();
     $(".alert-success").show();
-    $(".container").fadeIn();
+    $(".questions").fadeIn();
+
+
+  });
+
+
+  $(".questions form").submit(function(event){
+
+    var name = $("input#name").val().toUpperCase();
+    $(".name").text(name);
+    alert('hello');
+
+    $(".answer").show();
+    $(".alert-success").hide();
+    $(".questions").fadeOut();
 
     event.preventDefault();
   });
 });
-
-  $("#ready").submit(function(event){
-      event.preventDefault();
-    var name = $("input#name").val();
-    $(".name").text(name);
-
-
-    $(".answer").show();
-
-
-  });
