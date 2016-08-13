@@ -2,23 +2,24 @@ var add = function (question1, question2, question3, question4, question5) {
   return question1 + question2 + question3 + question4 + question5;
 };
 
-$(document).ready(function(event){
+$(document).ready(function(){
   $("#start").click(function(){
     $(".jumbotron").hide();
     $(".alert-success").show();
     $(".questions").fadeIn();
+    $(".answer").hide();
 
 
   });
 
 
-  $(".questions form").submit(function(event){
+  $(".questions form").submit(function(){
+
     var name = $("input#name").val().toUpperCase();
     $(".name").text(name);
     alert('HELLO');
 
-    $("#ready").click(function(event){
-      event.preventDefault();
+
       var question1 = parseInt($("input:radio[name=question1]:checked").val());
       alert(question1);
       var question2 = parseInt($("#question2").val());
@@ -31,7 +32,7 @@ $(document).ready(function(event){
       alert(question5);
 
       var result = add(question1, question2, question3, question4, question5)
-      alert('Yep');
+      alert(result);
       if (result <= 7) {
         $("#8-12").hide();
         $("#5-7").show();
@@ -52,6 +53,5 @@ $(document).ready(function(event){
     $(".alert-success").hide();
     $(".questions").fadeOut();
 
-    event.preventDefault();
+
   });
-});
