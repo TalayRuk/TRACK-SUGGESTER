@@ -41,7 +41,7 @@ $(document).ready(function(){
       }else if (result > 13 || result <= 15) {
         $("#5-7, #8-12, #16-18").hide();
         $("#13-15").show();
-      }else (result > 15 || result <= 18) {
+      }else if (result > 15 || result <= 18) {
         $("#5-7, #8-12, #13-15").hide();
         $("#16-18").show();
       } 
