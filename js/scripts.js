@@ -1,3 +1,7 @@
+var add = function (question1, question2, question3, question4, question5) {
+  return question1 + question2 + question3 + question4 + question5;
+};
+
 $(document).ready(function(event){
   $("#start").click(function(){
     $(".jumbotron").hide();
@@ -9,12 +13,27 @@ $(document).ready(function(event){
 
 
   $(".questions form").submit(function(event){
-
     var name = $("input#name").val().toUpperCase();
     $(".name").text(name);
     alert('HELLO');
 
-    var question1 = $("input:radio[name=question1]:checked").val();
+    var question1 = parseIn($("input:radio[name=question1]:checked").val());
+    var question2 = parseIn($("#question2").val());
+    var question3 = parseIn($("#question3").val());
+    var question4 = parseIn($("#question4").val());
+    var question5 = parseIn($("#questions").val());
+
+    $("#ready").click(function(event){
+      event.preventDefault();
+
+      var number1
+
+    });
+
+
+    if ()
+
+
 
 
     $(".answer").show();
