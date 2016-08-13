@@ -68,8 +68,8 @@ body {
 }
 
 .final img {
-  width: 30%;
-  float: right;
+  width: 40%;
+  text-align: right;
 }
 
 .language {
@@ -89,4 +89,5 @@ body {
 #p-life-comic {
   display: none;
   width: 40%;
+  text-align: left;
 }
