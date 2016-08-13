@@ -35,6 +35,7 @@ $(document).ready(function(){
 
       var result = add(question1, question2, question3, question4, question5)
       alert(result);
+      
       if (result <= 7) {
         $("#8-12").hide();
         $("#5-7").show();
