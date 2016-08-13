@@ -58,18 +58,23 @@ body {
   width: 100%
 }
 
-.answer {
+.final {
   display: none;
   color: #C5E0DC;
   text-align: center;
   background-color: #3B8686;
 }
 
-.score {
+#score {
+  display: none;
   font-size: 26px;
 }
 .language {
   color: red;
   font-weight: 400;
   text-align: center;
+}
+
+#p-life-comic {
+  display: none;
 }
