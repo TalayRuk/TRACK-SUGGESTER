@@ -38,11 +38,11 @@ $(document).ready(function(){
       }else if (result > 7 || result <= 12) {
         $("#5-7, #13-15, #16-18").hide();
         $("#8-12").show();
-      }else if (result > 13 || result <=15) {
+      }else if (result > 13 || result <= 15) {
         $("#5-7, #8-12, #16-18").hide();
         $("#13-15").show();
       }else (result > 15 || result <= 18) {
-        ("#5-7, #8-12, #13-15").hide();
+        $("#5-7, #8-12, #13-15").hide();
         $("#16-18").show();
       } 
       event.preventDefault();
