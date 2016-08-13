@@ -3,13 +3,13 @@ var add = function (question1, question2, question3, question4, question5) {
 };
 
 $(document).ready(function(){
-  $("#start").click(function(){
+  $("#start").click(function(event){
     $(".jumbotron").hide();
     $(".alert-success").show();
     $(".questions").fadeIn();
     $(".final").hide();
 
-
+  event.preventDefault();  
   });
 
 
