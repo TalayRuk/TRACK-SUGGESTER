@@ -19,11 +19,11 @@ $(document).ready(function(event){
 
     $("#ready").click(function(){
       // event.preventDefault();
-      var question1 = parseIn($("input:radio[name=question1]:checked").val());
-      var question2 = parseIn($("#question2").val());
-      var question3 = parseIn($("#question3").val());
-      var question4 = parseIn($("#question4").val());
-      var question5 = parseIn($("#questions").val());
+      var question1 = parseInt($("input:radio[name=question1]:checked").val());
+      var question2 = parseInt($("#question2").val());
+      var question3 = parseInt($("#question3").val());
+      var question4 = parseInt($("#question4").val());
+      var question5 = parseInt($("#questions").val());
 
       var result = add(question1, question2, question3, question4, question5)
       alert('Yep')
