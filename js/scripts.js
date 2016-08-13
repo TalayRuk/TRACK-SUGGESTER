@@ -28,8 +28,7 @@ $(document).ready(function(){
       
       var question5 = parseInt($("#question5").val());
       
-
-      var result = add(question1, question2, question3, question4, question5)
+      var result = add(question1, question2, question3, question4, question5);
       
       
       if (result <= 7) {
@@ -45,11 +44,11 @@ $(document).ready(function(){
         $("#5-7, #8-12, #13-15").hide();
         $("#16-18").show();
       } 
-      event.preventDefault();
-  });
 
     $(".final").show();
     $(".alert-success").hide();
     $(".questions").fadeOut();
-
+    
+    event.preventDefault();
+  });
 });
