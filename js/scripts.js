@@ -7,9 +7,6 @@ $(document).ready(function(){
     $(".jumbotron").hide();
     $(".alert-success").show();
     $(".questions").fadeIn();
-    $(".final").hide();
-
-
   });
 
 
@@ -18,7 +15,6 @@ $(document).ready(function(){
     var name = $("input#name").val().toUpperCase();
     $(".name").text(name);
     alert('HELLO');
-
   });
 
   $("#ready").click(function(event) {
