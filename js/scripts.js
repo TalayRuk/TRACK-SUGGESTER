@@ -31,13 +31,16 @@ $(document).ready(function(){
       var result = add(question1, question2, question3, question4, question5);
       alert(result);
 
+      // when I have (13 <= result >= 15) didn't work :(
+      // also using || instead of && also not working
+      // only the the first 2 works!!!! Y?
       if (result <= 8) {
         $("#9-12, #13-15, #16-19").hide();
         $("#8").show();
-      } else if (8 < result <= 12) {
+      } else if (result >= 9 && result <= 12) {
         $("#8, #13-15, #16-19").hide();
         $("#9-12").show();
-      } else if (12 < result <= 15) {
+      } else if (result >= 13 && result <= 15) {
         $("#8, #9-12, #16-19").hide();
         $("#13-15").show();
       } else {
@@ -49,7 +52,6 @@ $(document).ready(function(){
     $("#p-l-comic").fadeIn(5000);
     $(".alert-success").hide();
     $(".questions").hide();
-
 
   });
 });
