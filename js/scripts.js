@@ -34,13 +34,13 @@ $(document).ready(function(){
       if (result <= 8) {
         $("#9-12, #13-15, #16-19").hide();
         $("#8").show();
-      }else if (result > 8 || result <= 12) {
+      } else if (8 < result <= 12) {
         $("#8, #13-15, #16-19").hide();
         $("#9-12").show();
-      }else if (result > 12 || result <= 15) {
+      } else if (12 < result <= 15) {
         $("#8, #9-12, #16-19").hide();
         $("#13-15").show();
-      }else if (result > 15 || result <= 19) {
+      } else {
         $("#8, #9-12, #13-15").hide();
         $("#16-19").show();
       }
