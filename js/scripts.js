@@ -6,7 +6,7 @@ $(document).ready(function(){
   $("#start").click(function(){
     $(".jumbotron").hide();
     $(".alert-success").show();
-    $(".questions").fadeIn();
+    $(".questions").fadeIn(1000);
   });
 
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
       var question5 = parseInt($("#question5").val());
 
       var result = add(question1, question2, question3, question4, question5);
-
+      alert(result);
 
       if (result <= 8) {
         $("#9-12, #13-15, #16-19").hide();
@@ -46,8 +46,9 @@ $(document).ready(function(){
       }
 
     $(".final").show();
+    $("#p-l-comic").fadeIn(5000);
     $(".alert-success").hide();
-    $(".questions").fadeOut();
+    $(".questions").hide();
 
 
   });

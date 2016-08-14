@@ -54,9 +54,9 @@ body {
   text-align: center;
 }
 
-#dino-comic {
-  width: 60%;
-  margin-top; 30px;
+#coder-comic {
+  width: 50%;
+  margin-top: 30px;
 }
 
 .final {
@@ -87,8 +87,6 @@ body {
   text-decoration: underline;
 }
 
-#p-life-comic {
+#p-l-comic {
   display: none;
-  width: 40%;
-
 }
