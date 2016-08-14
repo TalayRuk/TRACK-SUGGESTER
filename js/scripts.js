@@ -31,16 +31,16 @@ $(document).ready(function(){
       var result = add(question1, question2, question3, question4, question5);
       
       
-      if (result <= 7) {
-        $("#8-12, #13-15, #16-18").hide();
-        $("#5-7").show();
-      }else if (result > 7 || result <= 12) {
-        $("#5-7, #13-15, #16-18").hide();
-        $("#8-12").show();
-      }else if (result > 12 || result <= 15) {
+      // if (result <= 7) {
+      //   $("#8-12, #13-15, #16-18").hide();
+      //   $("#5-7").show();
+      // }else if (result > 7 || result <= 12) {
+      //   $("#5-7, #13-15, #16-18").hide();
+        // $("#8-12").show();
+      }if (result > 12 || result <= 15) {
         $("#5-7, #8-12, #16-18").hide();
         $("#13-15").show();
-      }else if (result > 15 || result <= 19) {
+      }else (result > 15 || result <= 19) {
         $("#5-7, #8-12, #13-15").hide();
         $("#16-19").show();
       } 
