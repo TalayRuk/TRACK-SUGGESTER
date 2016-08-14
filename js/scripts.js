@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
 
 
-  $(".questions form").submit(function(){
+  $(".questions form").submit(function(event){
 
     var name = $("input#name").val().toUpperCase();
     $(".name").text(name);
@@ -49,6 +49,6 @@ $(document).ready(function(){
     $(".alert-success").hide();
     $(".questions").fadeOut();
 
-    // event.preventDefault();
+    event.preventDefault();
   });
 });
