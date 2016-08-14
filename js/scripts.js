@@ -19,37 +19,36 @@ $(document).ready(function(){
 
   $("#ready").click(function(event) {
       var question1 = parseInt($("input:radio[name=question1]:checked").val());
-      alert(question1);
-      var question2 = parseInt($("#question2").val());
-      alert(question2);
-      var question3 = parseInt($("#question3").val());
-      alert(question3);
-      var question4 = parseInt($("#question4").val());
-      alert(question4);
-      var question5 = parseInt($("#question5").val());
-      alert(question5);
-
-      var result = add(question1, question2, question3, question4, question5)
-      alert(result);
       
-      if (result <= 7) {
-        $("#8-12, #13-15, #16-18").hide();
-        $("#5-7").show();
-      }else if (result > 7 || result <= 12) {
-        $("#5-7, #13-15, #16-18").hide();
-        $("#8-12").show();
-      }else if (result > 13 || result <= 15) {
-        $("#5-7, #8-12, #16-18").hide();
+      var question2 = parseInt($("#question2").val());
+      
+      var question3 = parseInt($("#question3").val());
+      
+      var question4 = parseInt($("#question4").val());
+      
+      var question5 = parseInt($("#question5").val());
+      
+      var result = add(question1, question2, question3, question4, question5);
+      
+      
+      // if (result <= 7) {
+      //   $("#8-12, #13-15, #16-18").hide();
+      //   $("#5-7").show();
+      // }else if (result > 7 || result <= 12) {
+      //   $("#5-7, #13-15, #16-18").hide();
+        // $("#8-12").show();
+      }if (result > 12 || result <= 15) {
+        $("#5-7, #8-12, #16-19").hide();
         $("#13-15").show();
-      }else if (result > 15 || result <= 18) {
+      }else (result > 15 || result <= 19) {
         $("#5-7, #8-12, #13-15").hide();
-        $("#16-18").show();
+        $("#16-19").show();
       } 
-      event.preventDefault();
-  });
 
     $(".final").show();
     $(".alert-success").hide();
     $(".questions").fadeOut();
-
+    
+    event.preventDefault();
+  });
 });
