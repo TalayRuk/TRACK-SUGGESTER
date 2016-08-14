@@ -11,6 +11,8 @@ $(document).ready(function(){
 
 
   $(".questions form").submit(function(event){
+    event.preventDefault();
+    // y preventDefault allow alert here but not if it's on 56??
     var nameInput = $("input#person").val().toUpperCase();
     $(".person").text(nameInput);
     alert("Hello, "+ nameInput + " !");
@@ -51,6 +53,6 @@ $(document).ready(function(){
     $(".alert-success").hide();
     $(".questions").hide();
 
-    event.preventDefault();
+
   });
 });
