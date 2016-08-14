@@ -9,7 +9,6 @@ $(document).ready(function(){
     $(".questions").fadeIn(1000);
   });
 
-
   $(".questions form").submit(function(event){
     event.preventDefault();
     // y preventDefault allow alert here but not if it's on 56??
@@ -52,7 +51,5 @@ $(document).ready(function(){
     $("#p-l-comic").fadeIn(5000);
     $(".alert-success").hide();
     $(".questions").hide();
-
-
   });
 });
