@@ -10,8 +10,8 @@ $(document).ready(function(){
   });
 
 
-  $(".questions form").submit(function( ){
-
+  $(".questions form").submit(function(event){
+    event.preventDefault();
     var name = $("input#name").val().toUpperCase();
     $("#name").text(name);
     alert("Hello, "+ name + " !");
@@ -40,7 +40,7 @@ $(document).ready(function(){
       }else if (result > 12 || result <= 15) {
         $("#5-7, #8-12, #16-19").hide();
         $("#13-15").show();
-      }else (result > 15 || result <= 19) {
+      }else if (result > 15 || result <= 19) {
         $("#5-7, #8-12, #13-15").hide();
         $("#16-19").show();
       }
